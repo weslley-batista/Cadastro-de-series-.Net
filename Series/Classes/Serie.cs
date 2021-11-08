@@ -38,6 +38,7 @@ namespace Series
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
             retorno += "Ano: " + this.Ano + Environment.NewLine;
+            retorno += "Excluido: " + this.Excluido; 
             
             return retorno;
         }
@@ -49,6 +50,9 @@ namespace Series
         }
         public void Excluir(){
             this.Excluido = true;
+        }
+        public bool retoraExcluido(){
+            return this.Excluido;
         }
     }
 }

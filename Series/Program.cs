@@ -20,13 +20,13 @@ namespace Series
 						InserirSerie();
 						break;
 					case "3":
-                        //VisualizarSerie();
+                        VisualizarSerie();
 						break;
 					case "4":
-                        //AtualizarSerie();
+                        AtualizarSerie();
 						break;
 					case "5":
-						//ExcluirSerie();
+						ExcluirSerie();
 						break;
 					case "6":
 						Console.Clear();
@@ -42,6 +42,66 @@ namespace Series
 			Console.WriteLine("Obrigado por utilizar nossos serviços.");
 			Console.ReadLine();
         }
+        private static void VisualizarSerie(){
+            Console.Write("Digite o id da série: ");
+			int indiceSerie = int.Parse(Console.ReadLine());
+
+			var serie = repositorioSerie.RetornaPorId(indiceSerie);
+
+			Console.WriteLine(serie);
+        }
+        private static void ExcluirSerie(){
+            Console.Write("Digite o id da série a ser removida: ");
+			int indiceSerie = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Deseja mesmo excluir a serie indicada");
+            Console.WriteLine ("1 - Sim | 2 - Não");
+            int respostaConfirmacaoExclusao = int.Parse(Console.ReadLine());
+            if(respostaConfirmacaoExclusao == 1){
+                repositorioSerie.Exclui(indiceSerie);
+                Console.WriteLine("Série excluida com sucesso");
+            }else{
+                Console.WriteLine(" A série não excluida");
+            }            
+        }
+        private static void AtualizarSerie(){
+
+            ListarSeries(); // imprime todas as series
+            Console.Write("Digite o id da série que você deseja atualizar: ");
+			int indiceSerie = int.Parse(Console.ReadLine());
+            //listar generos
+            foreach (int i in Enum.GetValues(typeof(Genero)))
+			{
+				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
+			}
+            Console.Write("Digite o gênero entre as opções acima: ");
+			int entradaGenero = int.Parse(Console.ReadLine());
+            //listar desenvolvedoras
+            foreach (int i in Enum.GetValues(typeof(Desenvolvedora)))
+			{
+				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Desenvolvedora), i));
+			}
+            Console.Write("Digite a Desenvolvedora entre as opções acima: ");
+			int entradaDesenvolvedora = int.Parse(Console.ReadLine());
+
+			Console.Write("Digite o Título da Série: ");
+			string entradaTitulo = Console.ReadLine();
+
+			Console.Write("Digite o Ano de Início da Série: ");
+			int entradaAno = int.Parse(Console.ReadLine());
+
+			Console.Write("Digite a Descrição da Série: ");
+			string entradaDescricao = Console.ReadLine();
+
+			Serie atualizaSerie = new Serie(id: indiceSerie,
+                                        desenvolvedora: (Desenvolvedora)entradaGenero,
+										genero: (Genero)entradaGenero,
+										titulo: entradaTitulo,
+										ano: entradaAno,
+										descricao: entradaDescricao);
+
+			repositorioSerie.Atualiza(indiceSerie, atualizaSerie);
+        }
         private static void ListarSeries(){
             Console.WriteLine("Listar Séries");
             var lista  = repositorioSerie.Lista();
@@ -50,7 +110,9 @@ namespace Series
                 return;
             }
             foreach(var serie in lista){
-                Console.WriteLine ("#ID {0}: - {1}", serie.retornaId(), serie.retornaTitulo());
+                var excluido = serie.retoraExcluido();
+
+                Console.WriteLine ("#ID {0}: - {1}", serie.retornaId(), serie.retornaTitulo(),(excluido ? "|Excluído|" : ""));
             }
             
         }
