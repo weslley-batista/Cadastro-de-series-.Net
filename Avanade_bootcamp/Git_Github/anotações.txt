@@ -1,0 +1,19 @@
+###Comandos terminal:
+##[windows]
+listar diretorios - dir
+mover entre diretorios - cd
+criar pasta - mkdir
+deletar arquivos - del
+deletar pastas - rmdir
+
+##conseguir chave ssh:
+algoritmo de encriptação - Sha1
+ssh-keygen -t ed25519 -c[email]
+
+##utilizar o git
+criar um 'vigia' do git em determinada pasta -  git init
+verificar e adcionar todos os novos arquivos  - git add[* ou arquivo especifico]
+fazer commit e deixar descrição - git commit -m "[mensagem que aparecerá no commit]"
+estado de uma pasta - git status
+confugurações do git  - git config --list
+editar determinada configuração git config --global  user.[email ou name]
