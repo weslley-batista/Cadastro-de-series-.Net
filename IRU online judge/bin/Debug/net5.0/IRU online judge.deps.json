@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "IRU online judge/1.0.0": {
+        "runtime": {
+          "IRU online judge.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IRU online judge/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

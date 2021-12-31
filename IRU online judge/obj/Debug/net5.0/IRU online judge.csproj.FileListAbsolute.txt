@@ -1,0 +1,16 @@
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\bin\Debug\net5.0\IRU online judge.exe
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\bin\Debug\net5.0\IRU online judge.deps.json
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\bin\Debug\net5.0\IRU online judge.runtimeconfig.json
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\bin\Debug\net5.0\IRU online judge.runtimeconfig.dev.json
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\bin\Debug\net5.0\IRU online judge.dll
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\bin\Debug\net5.0\ref\IRU online judge.dll
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\bin\Debug\net5.0\IRU online judge.pdb
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\obj\Debug\net5.0\IRU online judge.csproj.AssemblyReference.cache
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\obj\Debug\net5.0\IRU online judge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\obj\Debug\net5.0\IRU online judge.AssemblyInfoInputs.cache
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\obj\Debug\net5.0\IRU online judge.AssemblyInfo.cs
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\obj\Debug\net5.0\IRU online judge.csproj.CoreCompileInputs.cache
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\obj\Debug\net5.0\IRU online judge.dll
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\obj\Debug\net5.0\ref\IRU online judge.dll
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\obj\Debug\net5.0\IRU online judge.pdb
+C:\Users\inho\Documents\DotNet study\Codigos_c#\IRU online judge\obj\Debug\net5.0\IRU online judge.genruntimeconfig.cache
